@@ -2,17 +2,15 @@
 
 set arch "x86_64"
 set base "cmark-gfm-0.28.3"
+set fileurl "https://github.com/github/cmark/archive/0.28.3.gfm.12.tar.gz"
 
-if {[file exists $base]} {
-    file delete -force $base
-}
-
-set var [list git clone https://github.com/github/cmark.git $base]
+set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
 
-if {[file exists $base]} {
-    file delete -force $base/.git
-}
+set var2 [list tar xzvf $base.tar.gz]
+exec >@stdout 2>@stderr {*}$var2
+
+file rename cmark-0.28.3.gfm.12 $base
 
 set var2 [list tar czvf ${base}.tar.gz $base]
 exec >@stdout 2>@stderr {*}$var2
