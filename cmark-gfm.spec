@@ -63,25 +63,25 @@ This package provides the development files for cmark-gfm.
 
 %files -n %{libname}
 %doc COPYING
-%{_libdir}/libcmark-gfm.so.%{version}.gfm.13
-%{_libdir}/libcmark-gfmextensions.so.%{version}.gfm.13
+%{_libdir}/libcmark-gfm.so.%{version}.gfm.15
+%{_libdir}/libcmark-gfm-extensions.so.%{version}.gfm.15
 
 %files devel
-%{_includedir}/cmark.h
-%{_includedir}/cmark_export.h
-%{_includedir}/cmark_version.h
-%{_includedir}/cmark_extension_api.h
-%{_includedir}/cmarkextensions_export.h
-%{_includedir}/core-extensions.h
+%{_includedir}/cmark-gfm.h
+%{_includedir}/cmark-gfm_export.h
+%{_includedir}/cmark-gfm_version.h
+%{_includedir}/cmark-gfm-extension_api.h
+%{_includedir}/cmark-gfm-extensions_export.h
+%{_includedir}/cmark-gfm-core-extensions.h
 %{_libdir}/libcmark-gfm.so
-%{_libdir}/libcmark-gfmextensions.so
+%{_libdir}/libcmark-gfm-extensions.so
 %{_libdir}/libcmark-gfm.a
-%{_libdir}/libcmark-gfmextensions.a
+%{_libdir}/libcmark-gfm-extensions.a
 %{_libdir}/pkgconfig/libcmark-gfm.pc
 %{_mandir}/man3/cmark-gfm.3%{?ext_man}
 %{_libdir}/cmake/cmark-gfm.cmake
 %{_libdir}/cmake/cmark-gfm-*.cmake
-%{_libdir}/cmake-gfmextensions
+%{_libdir}/cmake-gfm-extensions
 
 %doc README.md
 
