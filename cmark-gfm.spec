@@ -63,8 +63,8 @@ This package provides the development files for cmark-gfm.
 
 %files -n %{libname}
 %doc COPYING
-%{_libdir}/libcmark-gfm.so.%{version}.gfm.16
-%{_libdir}/libcmark-gfm-extensions.so.%{version}.gfm.16
+%{_libdir}/libcmark-gfm.so.%{version}.gfm.17
+%{_libdir}/libcmark-gfm-extensions.so.%{version}.gfm.17
 
 %files devel
 %{_includedir}/cmark-gfm.h
