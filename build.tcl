@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "cmark-gfm-0.28.3"
-set fileurl "https://github.com/github/cmark/archive/0.28.3.gfm.20.tar.gz"
+set base "cmark-gfm-0.29.0"
+set fileurl "https://github.com/github/cmark/archive/0.29.0.gfm.0.tar.gz"
 
 set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
@@ -10,7 +10,7 @@ exec >@stdout 2>@stderr {*}$var
 set var2 [list tar xzvf $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var2
 
-file rename cmark-gfm-0.28.3.gfm.20 $base
+file rename cmark-gfm-0.29.0.gfm.0 $base
 
 set var2 [list tar czvf ${base}.tar.gz $base]
 exec >@stdout 2>@stderr {*}$var2

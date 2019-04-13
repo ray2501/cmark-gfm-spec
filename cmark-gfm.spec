@@ -1,6 +1,6 @@
-%define libname libcmark-gfm0_28_3
+%define libname libcmark-gfm0_29_0
 Name:           cmark-gfm
-Version:        0.28.3
+Version:        0.29.0
 Release:        1
 Summary:        CommonMark parsing and rendering library and program in C
 License:        BSD-2-Clause AND MIT AND CC-BY-SA-4.0
@@ -63,8 +63,8 @@ This package provides the development files for cmark-gfm.
 
 %files -n %{libname}
 %doc COPYING
-%{_libdir}/libcmark-gfm.so.%{version}.gfm.20
-%{_libdir}/libcmark-gfm-extensions.so.%{version}.gfm.20
+%{_libdir}/libcmark-gfm.so.%{version}.gfm.0
+%{_libdir}/libcmark-gfm-extensions.so.%{version}.gfm.0
 
 %files devel
 %{_includedir}/cmark-gfm.h
