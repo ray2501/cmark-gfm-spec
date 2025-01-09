@@ -4,7 +4,7 @@ set arch "x86_64"
 set base "cmark-gfm-0.29.0"
 set fileurl "https://github.com/github/cmark/archive/0.29.0.gfm.13.tar.gz"
 
-set var [list wget $fileurl -O $base.tar.gz]
+set var [list wget2 $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
 
 set var2 [list tar xzvf $base.tar.gz]
